@@ -19,10 +19,10 @@ class SubTableView_cell: UITableViewCell {
     let boldAttribute = [
          NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 18)!
       ]
+    
+   
 
 
-    
-    
     
     func set(label: String, Sub_label: String, Image: String)
     {
@@ -39,7 +39,7 @@ class SubTableView_cell: UITableViewCell {
         Sub_image.image = try UIImage(data: Data(contentsOf: url!))
         }
         catch{
-          Sub_image.image = UIImage(systemName: "pencil")
+          Sub_image.image = UIImage(named: "New_logo")
         }
         
     }

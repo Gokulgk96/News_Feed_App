@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 var apicaller: news = news.init(articles: [])
 
@@ -25,6 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.Table_views.reloadData()
         }
  
+    //    self.Table_views.separatorStyle = UITableViewCell.SeparatorStyle.none
  
        
 
@@ -44,18 +46,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SubTableView_cell
         
-        cell.set(label: apicaller.articles[indexPath.row].title ?? "nil" , Sub_label: apicaller.articles[indexPath.row].description ?? "nil", Image: apicaller.articles[indexPath.row].urlToImage!)
+        cell.set(label: apicaller.articles[indexPath.row].title ?? "nil" , Sub_label: apicaller.articles[indexPath.row].description ?? "No description (Click to see the Full News Coverage)",
+                 Image: apicaller.articles[indexPath.row].urlToImage ?? "nil")
         
         return cell
     }
     
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let articlelink = apicaller.articles[indexPath.row].url
+        
+        guard let url = URL(string: articlelink! ) else
+        {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+        
+    }
+ 
 
     
     func JsonDownloader(completed: @escaping () -> ())
     {
             
-    let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e85bf764dc74481a9a842bbee6e76efa")!
+    let url = URL(string: "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=e85bf764dc74481a9a842bbee6e76efa")!
 
 
       let task = URLSession.shared.dataTask(with: url)
@@ -90,9 +105,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   
 
     
-    /*
- 
-   
- */
-
- 

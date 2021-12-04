@@ -21,6 +21,7 @@ struct Articles: Codable
     var title: String?
     var urlToImage: String?
     var description: String?
+    var url: String?
 }
 
  

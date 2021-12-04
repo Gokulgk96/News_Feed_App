@@ -27,42 +27,37 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="242"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pF-rS-god">
-                                                    <rect key="frame" x="11" y="17" width="392" height="46"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="46" id="imw-iJ-1TG"/>
-                                                        <constraint firstAttribute="width" constant="392" id="m9F-BN-YaE"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gel-E3-INQ">
+                                                    <rect key="frame" x="11" y="65" width="224" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gel-E3-INQ">
-                                                    <rect key="frame" x="11" y="85" width="224" height="20.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-34-6Pq">
+                                                    <rect key="frame" x="243" y="77" width="160" height="154"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="224" id="ERP-QR-Qx3"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-34-6Pq">
-                                                    <rect key="frame" x="251" y="77" width="152" height="154"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="152" id="ORY-eK-j12"/>
-                                                        <constraint firstAttribute="height" constant="160" id="ZME-kC-LZp"/>
+                                                        <constraint firstAttribute="width" constant="160" id="ORY-eK-j12"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pF-rS-god">
+                                                    <rect key="frame" x="11" y="11" width="392" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="imw-iJ-1TG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9pF-rS-god" firstAttribute="top" secondItem="Ft7-J9-W0H" secondAttribute="top" constant="17" id="ESY-fc-dSK"/>
+                                                <constraint firstItem="9pF-rS-god" firstAttribute="top" secondItem="Ft7-J9-W0H" secondAttribute="top" constant="11" id="ESY-fc-dSK"/>
                                                 <constraint firstAttribute="trailing" secondItem="9pF-rS-god" secondAttribute="trailing" constant="11" id="H7K-3i-qZz"/>
+                                                <constraint firstItem="Gel-E3-INQ" firstAttribute="leading" secondItem="Ft7-J9-W0H" secondAttribute="leading" constant="11" id="Pjj-rY-ebt"/>
                                                 <constraint firstItem="9pF-rS-god" firstAttribute="leading" secondItem="Ft7-J9-W0H" secondAttribute="leading" constant="11" id="Szb-hR-dxD"/>
-                                                <constraint firstItem="Gel-E3-INQ" firstAttribute="top" secondItem="9pF-rS-god" secondAttribute="bottom" constant="22" id="WtU-vw-SVp"/>
                                                 <constraint firstAttribute="bottom" secondItem="hxo-34-6Pq" secondAttribute="bottom" constant="11" id="cP6-Qc-ZPH"/>
-                                                <constraint firstItem="hxo-34-6Pq" firstAttribute="leading" secondItem="Gel-E3-INQ" secondAttribute="trailing" constant="16" id="cUp-FI-OQe"/>
-                                                <constraint firstItem="Gel-E3-INQ" firstAttribute="leading" secondItem="Ft7-J9-W0H" secondAttribute="leading" constant="11" id="oeu-Cd-83L"/>
-                                                <constraint firstItem="hxo-34-6Pq" firstAttribute="top" secondItem="9pF-rS-god" secondAttribute="bottom" constant="14" id="qIA-0N-eaD"/>
+                                                <constraint firstItem="Gel-E3-INQ" firstAttribute="top" secondItem="9pF-rS-god" secondAttribute="bottom" constant="8" id="ep6-vQ-pqZ"/>
+                                                <constraint firstItem="hxo-34-6Pq" firstAttribute="leading" secondItem="Gel-E3-INQ" secondAttribute="trailing" constant="8" id="gmP-4S-eWs"/>
+                                                <constraint firstItem="hxo-34-6Pq" firstAttribute="top" secondItem="9pF-rS-god" secondAttribute="bottom" constant="20" id="qIA-0N-eaD"/>
                                                 <constraint firstAttribute="trailing" secondItem="hxo-34-6Pq" secondAttribute="trailing" constant="11" id="sLr-yA-no9"/>
                                             </constraints>
                                         </tableViewCellContentView>
